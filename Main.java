@@ -16,9 +16,9 @@ public class Main {
         Arrays.sort(arr, new SorterInLowerCase());
         ArrayList<ArrayList<String>> arrListOfarrList = new ArrayList<>();
         ArrayList<String> nestedArrList = new ArrayList<>();
-        char priv_char = arr[0].charAt(0);
+        char priv_char = arr[0].toLowerCase().charAt(0);
         for (int i=0; i<arr.length; i++){
-            char curr_char = arr[i].charAt(0);
+            char curr_char = arr[i].toLowerCase().charAt(0);
             if (curr_char != priv_char) {
                 priv_char = curr_char;
                 nestedArrList.sort(new SorterByLength());
